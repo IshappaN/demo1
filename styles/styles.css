@@ -197,10 +197,22 @@ button.secondary {
   color: var(--text-color);
 }
 
+/* modified code for hover */
 main img {
   max-width: 100%;
   width: auto;
   height: auto;
+  transition: ease-in-out 1s;
+}
+.cards-card-image {
+  overflow: hidden;
+}
+.columns-img-col {
+  overflow: hidden;
+}
+main img:hover {
+  cursor: pointer;
+  transform: scale(120%);
 }
 
 .icon {
@@ -233,7 +245,9 @@ main .section {
 }
 
 /* section metadata */
+/* modified code for backround-color */
+
 main .section.light,
 main .section.highlight {
-  background-color: red;
+  background-color: rgb(255, 0, 0);
 }
